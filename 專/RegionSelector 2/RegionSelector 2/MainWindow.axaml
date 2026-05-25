@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="RegionSelector.MainWindow"
+        Title="RegionSelector"
+        
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        ExtendClientAreaTitleBarHeightHint="-1"
+        
+        TransparencyLevelHint="Transparent"
+        Background="Transparent" 
+        
+        Topmost="True"
+        Cursor="Cross"
+        PointerPressed="OnPointerPressed"
+        PointerMoved="OnPointerMoved"
+        PointerReleased="OnPointerReleased"
+        KeyDown="OnKeyDown">
+
+    <Panel Background="#40FFFFFF">
+        <Canvas Name="MainCanvas" Background="Transparent">
+            <Rectangle Name="SelectionBox" 
+                       Stroke="#0078D7" 
+                       StrokeThickness="2" 
+                       Fill="#200078D7"
+                       IsVisible="False" />
+        </Canvas>
+    </Panel>
+</Window>

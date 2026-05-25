@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ElsaServer/ElsaServer.csproj" />
+  <Project Path="ElsaStudio/ElsaStudio.csproj" />
+</Solution>
